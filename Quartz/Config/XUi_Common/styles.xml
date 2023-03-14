@@ -1,0 +1,27 @@
+<Quartz name="XUi_Common/styles.xml">
+
+	<!-- Curved Label-->
+	<append xpath="/styles">
+		<style type="curvedlabel">
+			<style_entry name="color" value="[labelColor]"/>
+			<style_entry name="font_face" value="ReferenceFont"/>
+			<style_entry name="font_size" value="28"/>
+			<style_entry name="justify" value="left"/>
+			<style_entry name="effect" value="none"/>
+			<style_entry name="pivot" value="topleft"/>
+			<style_entry name="text" value=""/>
+			<style_entry name="upper_case" value="false" />
+			<style_entry name="crispness" value="OnDesktop" />
+		</style>
+	</append>
+	
+	<!-- Crispness Fix -->
+	<append xpath="/styles/style[@type='label' and count(@*)=1]">
+		<style_entry name="crispness" value="OnDesktop" />
+	</append>
+	
+	<append xpath="/styles/style[@type='textlist' and count(@*)=1]">
+		<style_entry name="crispness" value="OnDesktop" />
+	</append>
+	
+</Quartz>

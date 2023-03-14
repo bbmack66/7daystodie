@@ -1,0 +1,7 @@
+<Quartz name="XUi/windows.xml">
+
+	<!-- Crispness Fix -->
+	<setattribute xpath="/windows/window[@name='chatoutput']//textlist[@name='txtOutput']" name="crispness">OnDesktop</setattribute>
+	<setattribute xpath="/windows/window[@name='chat']//textfield[@name='txtInput']" name="crispness">OnDesktop</setattribute>
+	
+</Quartz>
